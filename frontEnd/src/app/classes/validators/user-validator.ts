@@ -52,14 +52,4 @@ export class UserValidator {
                 );
         };
     }
-
-
-    // static uniqueEmail(control: AbstractControl): Promise<ValidationErrors | null> | null {
-    //     const service = new UserService();
-    //     return new Promise((resolve, reject) => {
-    //         setTimeout(() => {
-    //             return service.isEmailExists(control.value) ? resolve({ unique: true }) : resolve(null);
-    //         }, 3000);
-    //     });
-    // }
 }
