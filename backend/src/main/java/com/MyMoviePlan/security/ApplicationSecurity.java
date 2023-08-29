@@ -55,13 +55,6 @@ public class ApplicationSecurity extends WebSecurityConfigurerAdapter {
         http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
     }
 
-//                .antMatchers(HttpMethod.POST, "/user/authenticate", "/user/sign-up")
-//                .permitAll()
-//                .antMatchers(HttpMethod.PUT, "/user/forgot-password")
-//                .permitAll()
-//                .antMatchers(HttpMethod.GET, "/auditorium/**", "/movie/**", "/show/**", "/user/check/**")
-//                .permitAll()
-
     @Override
     public void configure(WebSecurity web) throws Exception {
         web.ignoring()
